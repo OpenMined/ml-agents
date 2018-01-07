@@ -1,0 +1,3 @@
+[submodule "unity-environment/Assets/OpenMined"]
+	path = unity-environment/Assets/OpenMined
+	url = https://github.com/OpenMined/OpenMined
