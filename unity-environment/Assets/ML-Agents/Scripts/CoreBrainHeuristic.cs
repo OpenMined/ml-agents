@@ -61,13 +61,14 @@ public class CoreBrainHeuristic : ScriptableObject, CoreBrain
 
         foreach (KeyValuePair<int, Agent> idAgent in brain.agents)
         {
-            actions.Add(idAgent.Key, decision.Decide(
+                actions.Add(idAgent.Key, decision.Decide(
                 states[idAgent.Key],
                 observations[idAgent.Key],
                 rewards[idAgent.Key],
                 dones[idAgent.Key],
                 old_memories[idAgent.Key]));
         }
+        
         foreach (KeyValuePair<int, Agent> idAgent in brain.agents)
         {
             new_memories.Add(idAgent.Key, decision.MakeMemory(

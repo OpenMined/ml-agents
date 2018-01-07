@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using System.Linq;
-
+using OpenMined.Network.Controllers;
+using OpenMined.Network.Servers;
 
 
 // Class contains all necessary environment parameters
@@ -15,7 +16,8 @@ public enum BrainType
     Player,
     Heuristic,
     External,
-    Internal
+    Internal,
+    OpenMined
 }
 
 #else
@@ -24,11 +26,9 @@ public enum BrainType
     Player,
     Heuristic,
     External,
+    OpenMined
 }
 #endif
-
-
-
 
 public enum StateType
 {
@@ -75,7 +75,11 @@ public class BrainParameters
     /**< \brief Defines if the action is discrete or continuous */
     public StateType stateSpaceType = StateType.continuous;
     /**< \brief Defines if the state is discrete or continuous */
+
+    public SyftServer syft;
+    
 }
+
 
 /**
  * Contains all high-level Brain logic. 
