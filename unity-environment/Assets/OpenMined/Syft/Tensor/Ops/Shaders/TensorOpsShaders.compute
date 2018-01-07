@@ -1,7 +1,0 @@
-﻿namespace OpenMined.Syft.Tensor.Ops.Shaders
-{
-    public class TensorOpsShaders_compute
-    {
-        
-    }
-}
