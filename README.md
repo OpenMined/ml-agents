@@ -1,6 +1,7 @@
 <img src="images/unity-wide.png" align="middle" width="3000"/>
 
-# Unity ML - Agents (Beta)
+# Unity ML Agents + OpenMined
+This repository is a proof-of-concept implementation of an CoreBrainOpenMined, showing how one can use OpenMined as a plugin into a separate Unity Framework, in this case, one to train Reinforcement Learning agents. To run this tutorial, please see the [BasicTutorial.md](BasicTutorial.md) file.
 
 **Unity Machine Learning Agents** allows researchers and developers to
 create games and simulations using the Unity Editor which serve as
