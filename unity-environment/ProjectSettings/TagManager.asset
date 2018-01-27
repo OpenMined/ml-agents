@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - agent
-  - iWall
+  - Comet
+  - Agent
   layers:
   - Default
   - TransparentFX
@@ -15,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - invisible
-  - ball
+  - Comet
+  - 
   - 
   - 
   - 
