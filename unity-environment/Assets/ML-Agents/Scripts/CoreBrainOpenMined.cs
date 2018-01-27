@@ -152,8 +152,9 @@ public class CoreBrainOpenMined : ScriptableObject, CoreBrain
                 }
                 else
                 {
-                    FloatTensor input = ctrl.floatTensorFactory.Create(_shape: new int[] {1,1},
-                        _data: new float[] {states[idAgent.Key][0]});
+					//input = [Number of agents x state size]
+					FloatTensor input = ctrl.floatTensorFactory.Create(_shape: new int[] {1,states[idAgent.Key].Count},
+						_data: states[idAgent.Key].ToArray());
 
                     IntTensor pred = policy.Sample(input);
                     actions.Add(idAgent.Key, new float[1] {pred.Data[0]});
